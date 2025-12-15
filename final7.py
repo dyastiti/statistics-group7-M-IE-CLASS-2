@@ -112,6 +112,9 @@ T = TEXT[language]
 # =========================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ASSET_DIR = os.path.join(BASE_DIR, "assets")
+st.write("ASSET DIR:", ASSET_DIR)
+st.write("Files:", os.listdir(ASSET_DIR) if os.path.exists(ASSET_DIR) else "Folder not found")
+
 
 # =========================
 # TEAM MEMBERS
@@ -254,3 +257,4 @@ else:
     ax.set_xlabel(x_var)
     ax.set_ylabel(y_var)
     st.pyplot(fig)
+
